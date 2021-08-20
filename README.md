@@ -9,10 +9,6 @@ Karol Uju Amajirionwu
 ![][cypressDashboard]
 ![][gitlabPipeline]
 
-+ Feature 2 - Bundling and Code Splitting - loads pages and views only when required instead of all together.
-
-![][bundlingAndCodeSplitting]
-
 + Feature 3 - Added new navigation testing and other testing files:
 
 + Navigation - Changed navigation tests to navigate via a dropdown menu. 
