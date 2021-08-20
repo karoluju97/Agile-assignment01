@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Assignment 1 - Agile Software Practice.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Karol Uju Amajirionwu
 
-## Available Scripts
+## App Features.
+ 
++ Feature 1 - Continuous Integration - Integrated the project with both the Cypress Dashboard and Gitlab Pipeline.
 
-In the project directory, you can run:
+![][cypressDashboard]
+![][gitlabPipeline]
 
-### `npm start`
++ Feature 2 - Bundling and Code Splitting - loads pages and views only when required instead of all together.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![][bundlingAndCodeSplitting]
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
++ Feature 3 - Added new navigation testing and other testing files:
 
-### `npm test`
++ Navigation - Changed navigation tests to navigate via a dropdown menu. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tests: cypress/integration/navigation.spec.js 
 
-### `npm run build`
+![][navigation]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
++ Home Page - Shows a list of movies to discover. Clicking the 'Add to Favorites' button will add it to the Favorite Movies page. Aside from the code from the labs, I added a test for adding movies to favorites.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tests: cypress/integration/home-page.spec.js 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![][homepage]
 
-### `npm run eject`
++ Person Details Page - Shows detailed information on a TV Show.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Tests: cypress/integration/personDetails-page.spec.js 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![][personDetails]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
++ Popular People Page - Shows a list of popular people. Clicking the 'Add to Favorites' button will add it to the Favorite Actors page.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Tests: cypress/integration/personPopular-page.spec.js 
 
-## Learn More
+![][personPopularList]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
++ TV Airing Page - Shows a list of TV shows to be discovered. Clicking on any of the images will display a new page with TV show details. Clicking the 'Add to Watch List' button will add it to the TV watch list page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Tests: cypress/integration/tvAiring-page.spec.js 
 
-### Code Splitting
+![][tvAiringList]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
++ TV Details Page - Shows detailed information on a TV Show. Clicking the 'Show Reviews' button will display extracts from critic reviews.
 
-### Analyzing the Bundle Size
+Tests: cypress/integration/tvDetails-page.spec.js 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![][tvDetails]
 
-### Making a Progressive Web App
++ TV Discover Page - Shows a list of TV shows to be discovered. Clicking on any of the images will display a new page with TV show details. Clicking the 'Add to Favorites' button will add it to the TV favorite's page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Tests: cypress/integration/tvDiscover-page.spec.js 
 
-### Advanced Configuration
+![][tvDiscoverList]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
++ TV Top Rated Page - Shows a list of Top Rated TV Shows. Clicking on any of the images will display a new page with TV show details. Clicking the 'Add to Watch List' button will not add it to the watch list page because of a bug.
 
-### Deployment
+Tests: cypress/integration/tvTopRated-page.spec.js 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![][tvTopRatedList]
 
-### `npm run build` fails to minify
++ Upcoming Page - Shows a list of upcoming movies. Clicking the 'Add to Watch List' button will add it to the watch list. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tests: cypress/integration/upcoming-page.spec.js 
+
+![][upcomingMoviesList]
+
+## Testing.
+
+Cypress Dashboard URL: https://dashboard.cypress.io/projects/1z3idx/runs?branches=%5B%5D&committers=%5B%5D&flaky=%5B%5D&page=1&status=%5B%5D&tags=%5B%5D&timeRange=%7B%22startDate%22%3A%221970-01-01%22%2C%22endDate%22%3A%222038-01-19%22%7D
+
+### Advanced Testing (If required).
+
++ None
+
+## Independent learning (If relevant).
+
+Implemented a react bootstrap dropdown menu to replace to default navbar menu. Added and implemented tests for it mainly in navigation.spec.js but it is also present in all test files. 
+
+![][dropdownMenu]
+
+https://react-bootstrap.github.io/components/dropdowns/
+
+---------------------------------
+[reviewLink]: ./public/rreview.png
+[cardLink]: ./public/homepage.png
+[upcomingMoviesList]: ./public/upcomingmovies.png
+[moviesWatchList]: ./public/watchlist.png
+[tvDiscoverList]: ./public/tvdiscover.png
+[tvFavorites]: ./public/tvfavorites.png
+[tvTopRatedList]: ./public/topratedtv.png
+[tvAiringList]: ./public/tvairing.png
+[tvWatchList]: ./public/watchlist.png
+[tvDetails]: ./public/tvdetails.png
+[tvReviews]: ./public/rrviews.png
+[tvFullReview]: ./public/revviews.png
+[personPopularList]: ./public/popularperson.png
+[personFavorites]: ./public/favoriteperson.png
+[personDetails]: ./public/persondetails.png
+[dropdownMenu]: ./public/dropDown.png
+[cypressDashboard]: ./public/cypressDashboard.png
+[gitlabPipeline]: ./public/gitlab.png
+[navigation]: ./public/navigation.png
+[homepage]: ./public/homepage.png
