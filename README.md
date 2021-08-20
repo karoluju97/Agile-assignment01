@@ -85,6 +85,9 @@ Implemented a react bootstrap dropdown menu to replace to default navbar menu. A
 
 https://react-bootstrap.github.io/components/dropdowns/
 
+Github Link: https://github.com/karoluju97/Agile-assignment01/tree/master
+GitLab Link: https://gitlab.com/KarolUju97/agile-assignment001
+
 ---------------------------------
 [reviewLink]: ./public/rreview.png
 [cardLink]: ./public/homepage.png
