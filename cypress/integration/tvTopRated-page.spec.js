@@ -50,8 +50,8 @@ describe("Top Rated TV Page ", () => {
                             .should("have.text", matchingTvShows[index].name);
                     });
                 })
-                it("should display tv shows with 'ob' in the title", () => {
-                    const searchString = "ob";
+                it("should display tv shows with 'me' in the title", () => {
+                    const searchString = "me";
                     const matchingTvShows = filterByName(tvShows, searchString);
                     cy.get("input").clear().type(searchString);
                     cy.get(".card").should("have.length", matchingTvShows.length);

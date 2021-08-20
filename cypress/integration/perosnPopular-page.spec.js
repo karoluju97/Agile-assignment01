@@ -35,8 +35,8 @@ describe("Popular Actors page ", () => {
 
         describe("Filtering", () => {
             describe("By actor name", () => {
-                it("should display actors with 'p ' in their name", () => {
-                    const searchString = 'p'
+                it("should display actors with 'r' in their name", () => {
+                    const searchString = 'r'
                     const matchingActors = filterByName(popular, searchString);
                     cy.get("input").clear().type(searchString);
                     cy.get(".card").should("have.length", matchingActors.length);
